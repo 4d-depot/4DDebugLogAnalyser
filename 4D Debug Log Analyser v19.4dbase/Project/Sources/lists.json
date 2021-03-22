@@ -1,0 +1,49 @@
+{
+	"v": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "vfdq",
+				"ref": 1,
+				"editable": true,
+				"subTree": {
+					"lineHeight": 18,
+					"editable": false,
+					"items": [
+						{
+							"text": "(t'\"g",
+							"ref": 7,
+							"editable": true
+						}
+					]
+				}
+			},
+			{
+				"text": "vfqdsfv",
+				"ref": 2,
+				"editable": true
+			},
+			{
+				"text": "gtrzetg",
+				"ref": 6,
+				"editable": false
+			},
+			{
+				"text": "vfedfv",
+				"ref": 3,
+				"editable": true
+			},
+			{
+				"text": "vfdqsdfv",
+				"ref": 4,
+				"editable": true
+			},
+			{
+				"text": "Nouvel élément N° 5",
+				"ref": 5,
+				"editable": true
+			}
+		]
+	}
+}

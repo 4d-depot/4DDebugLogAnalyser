@@ -1,0 +1,181 @@
+{
+	"methods": {
+		"isQuery": {
+			"timeStamp": "2021-03-12T09:52:51.325Z"
+		},
+		"getLogLines": {
+			"timeStamp": "2021-03-12T09:52:51.323Z"
+		},
+		"_highlight": {
+			"timeStamp": "2021-03-12T09:52:51.320Z"
+		},
+		"getlastOp": {
+			"timeStamp": "2021-03-12T09:52:51.324Z"
+		},
+		"sortTextNumber": {
+			"timeStamp": "2021-03-12T09:52:51.326Z"
+		},
+		"findNextSequence": {
+			"timeStamp": "2021-03-12T09:52:51.321Z"
+		},
+		"z": {
+			"timeStamp": "2021-03-19T14:33:01.015Z"
+		},
+		"getLastTime": {
+			"timeStamp": "2021-03-12T09:52:51.323Z"
+		},
+		"getProcessDuration": {
+			"timeStamp": "2021-03-12T09:52:51.323Z"
+		},
+		"timeToString": {
+			"timeStamp": "2021-03-12T09:52:51.326Z"
+		},
+		"setStatsInfos": {
+			"timeStamp": "2021-03-12T09:52:51.325Z"
+		},
+		"timeToMicroseconds": {
+			"timeStamp": "2021-03-12T09:52:51.326Z"
+		},
+		"getLastSeq": {
+			"timeStamp": "2021-03-12T09:52:51.322Z"
+		},
+		"getRefFromName": {
+			"timeStamp": "2021-03-12T09:52:51.324Z"
+		},
+		"getFirstLogOffset": {
+			"timeStamp": "2021-03-17T09:58:39.708Z"
+		},
+		"timeToList": {
+			"timeStamp": "2021-03-12T09:52:51.326Z"
+		},
+		"sortLogPath": {
+			"timeStamp": "2021-03-12T09:52:51.325Z"
+		},
+		"getFileLogLines": {
+			"timeStamp": "2021-03-15T09:19:53.887Z",
+			"attributes": {
+				"preemptive": "capable"
+			}
+		},
+		"getStrOpType": {
+			"timeStamp": "2021-03-12T09:52:51.324Z"
+		},
+		"logToString": {
+			"timeStamp": "2021-03-12T09:52:51.325Z"
+		},
+		"highlight": {
+			"timeStamp": "2021-03-12T09:52:51.324Z"
+		},
+		"getFileInfo": {
+			"timeStamp": "2021-03-12T09:52:51.321Z"
+		},
+		"fitZoom": {
+			"timeStamp": "2021-03-19T10:25:39.115Z"
+		},
+		"numericableDuration": {
+			"timeStamp": "2021-03-12T09:52:51.325Z"
+		},
+		"checkLine": {
+			"timeStamp": "2021-03-12T09:52:51.321Z",
+			"attributes": {
+				"preemptive": "capable"
+			}
+		},
+		"getCurrentPUID": {
+			"timeStamp": "2021-03-12T09:52:51.321Z"
+		},
+		"updateOperationValues": {
+			"timeStamp": "2021-03-19T14:31:03.013Z"
+		},
+		"Compiler_Arrays": {
+			"timeStamp": "2021-03-12T09:52:51.319Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"startDialog": {
+			"timeStamp": "2021-03-12T09:52:51.326Z"
+		},
+		"stackToList": {
+			"timeStamp": "2021-03-12T09:52:51.326Z"
+		},
+		"findStackIndex": {
+			"timeStamp": "2021-03-12T09:52:51.321Z"
+		},
+		"getFirstTime": {
+			"timeStamp": "2021-03-12T09:52:51.322Z"
+		},
+		"sortProcessByDecreasingTime": {
+			"timeStamp": "2021-03-12T09:52:51.326Z"
+		},
+		"getMinuteStamp": {
+			"timeStamp": "2021-03-12T09:52:51.323Z"
+		},
+		"getStrOpName": {
+			"timeStamp": "2021-03-12T09:52:51.324Z"
+		},
+		"filter": {
+			"timeStamp": "2021-03-12T09:52:51.321Z"
+		},
+		"_filter": {
+			"timeStamp": "2021-03-12T09:52:51.320Z"
+		},
+		"readableDuration": {
+			"timeStamp": "2021-03-12T09:52:51.325Z"
+		},
+		"Compiler_Variables": {
+			"timeStamp": "2021-03-19T13:20:53.457Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"sortDuration": {
+			"timeStamp": "2021-03-12T09:52:51.325Z"
+		},
+		"Compiler_Methods": {
+			"timeStamp": "2021-03-15T09:21:36.899Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"getLastLine": {
+			"timeStamp": "2021-03-12T09:52:51.322Z"
+		},
+		"buildGraph": {
+			"timeStamp": "2021-03-19T10:39:44.648Z"
+		},
+		"getNbCalledMethod": {
+			"timeStamp": "2021-03-12T09:52:51.323Z"
+		},
+		"tools_timeStamp_to_String": {
+			"timeStamp": "2021-03-12T09:52:51.326Z"
+		},
+		"OPColor": {
+			"timeStamp": "2021-03-17T09:58:39.707Z"
+		},
+		"get_stack_string": {
+			"timeStamp": "2021-03-12T09:52:51.324Z"
+		},
+		"(z)": {
+			"timeStamp": "2021-03-12T09:52:51.345Z"
+		},
+		"(test_1)": {
+			"timeStamp": "2021-03-12T09:52:51.358Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(test)": {
+			"timeStamp": "2021-03-12T09:52:51.358Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(Compiler_Variables_Inter)": {
+			"timeStamp": "2021-03-12T09:52:51.357Z",
+			"attributes": {
+				"invisible": true
+			}
+		}
+	}
+}

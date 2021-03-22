@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="4D Debug Log Analyser v19" uuid="C29D6F337D5F4D8F98958F82757C92FD" collation_locale="fr">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="(Log_Line)" uuid="BBC71B7812104135BED662B8CD4CC1E5" id="1" hide_in_REST="true">
+		<field name="ID" uuid="C2F115B786E0474D95A0B71C0D8E2067" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="_type" uuid="683D24A777234563B33D816A9310B1D3" type="4" never_null="true" id="2"/>
+		<field name="_sequence" uuid="7DDDC0EFAAE84D5EA6D8A9BE5B89BCD9" type="4" never_null="true" id="3"/>
+		<field name="_date" uuid="4CCCA036877146F39E48A5E4B6CF4F09" type="8" never_null="true" id="4"/>
+		<field name="_PID" uuid="2C1A2726EDAB4CBF979F550364C5CF66" type="4" never_null="true" id="5"/>
+		<field name="_PUID" uuid="5703F373AEAC4678B2AE2C2582C938A3" type="4" never_null="true" id="6"/>
+		<field name="_stack" uuid="71CDD69144AC4A228252CE15C42C1D68" type="4" never_null="true" id="7"/>
+		<field name="_param" uuid="E214DBDD07D94790B80888F8E4F1DD92" type="10" limiting_length="255" never_null="true" id="9"/>
+		<field name="_formEvent" uuid="D9325BE8D2274084AED10B6DE879A883" type="4" never_null="true" id="10"/>
+		<field name="_duration" uuid="E3758074ACD84186A02A3FA1E39ADF60" type="4" never_null="true" id="11"/>
+		<field name="_closed" uuid="BC1CC5FB9DD44E9F881A3DB488CBCAC8" type="1" never_null="true" id="12"/>
+		<field name="_opened" uuid="69012A6D9EED4113B93554AD7D68F682" type="1" never_null="true" id="13"/>
+		<field name="_parentSeq" uuid="6004879ACC0F4C6AB8DC9EBFEA181454" type="4" never_null="true" id="14"/>
+		<field name="_name" uuid="865DF9D02AF748DC9D39D3BFD021F89C" type="10" limiting_length="255" never_null="true" id="15"/>
+		<field name="_childSeq" uuid="F3ACF8E0495D40E29CA053421D9D48BC" type="4" never_null="true" id="16"/>
+		<primary_key field_name="ID" field_uuid="C2F115B786E0474D95A0B71C0D8E2067"/>
+		<table_extra trashed="true" input_form="(Formulaire1)" output_form="(Formulaire2)">
+			<editor_table_info displayable_fields_count="17">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="1096.29296875" top="152.64453125" width="208.9609375" height="413.27734375"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Project" uuid="2299B46AD9A744AF8823B8BCAACD9A0F" id="3">
+		<field name="ID" uuid="9801126E87954E84ACF5FF5855374F37" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="trace" uuid="87CD325E1CAF4427B12329E6BC0A082F" type="21" blob_switch_size="2147483647" never_null="true" id="2"/>
+		<field name="logList" uuid="7213C824B97E4D3EACA119E1C76BE75F" type="21" blob_switch_size="2147483647" never_null="true" id="3"/>
+		<field name="Date_Debut" uuid="C13F3D36C651F143A20ADF993FA63A45" type="8" never_null="true" id="4"/>
+		<field name="Date_Fin" uuid="49993ABD9867CE44BBEA1797B2C7107C" type="8" never_null="true" id="5"/>
+		<field name="Heure_Debut" uuid="4B8601BF90A49D4FB3DBD6BBD05990FC" type="10" limiting_length="255" never_null="true" id="6"/>
+		<field name="Heure_Fin" uuid="65DEDE1C95C0754585902DB667491F9A" type="10" limiting_length="255" never_null="true" id="7"/>
+		<field name="Liste_process" uuid="2CE51FAD31E20F45AF00F9E4549AC9CD" type="21" blob_switch_size="2147483647" never_null="true" id="8"/>
+		<field name="Log_files_paths" uuid="C3D69CC32A45454D92EB2DA9E79A8CA7" type="10" never_null="true" id="9"/>
+		<field name="Date_import" uuid="492F14D722734B4F83875DA2D09C14F8" type="8" never_null="true" id="10"/>
+		<field name="Heure_import" uuid="5626EA6C6EEADD4289296B82E64EAFFC" type="9" never_null="true" id="11"/>
+		<field name="duree_import" uuid="32588DE1245F044F9F5D4AA9A1C4341D" type="4" never_null="true" id="12"/>
+		<field name="Nom_projet_import" uuid="B03B2B4555EDB340AC5E11E7D621F272" type="10" limiting_length="255" never_null="true" id="13">
+			<field_extra>
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="comment" uuid="53DC92BD92E2594B9299309964294C08" type="10" never_null="true" id="14"/>
+		<field name="Taille" uuid="0464B6B8065DD449B7D2979B6EF6AB62" type="6" never_null="true" id="15"/>
+		<field name="LogsFolderPath" uuid="62B1C7BEACBFE04C83F656A76FD05929" type="10" never_null="true" id="16"/>
+		<field name="TimeLogMin" uuid="260B2980A3D2E043BF70096368A039C2" type="9" never_null="true" id="17"/>
+		<field name="TimeLogMax" uuid="70F0BE4BBCEC4B42AAEAACE3AC48F821" type="9" never_null="true" id="18"/>
+		<field name="Nb_Ligne" uuid="19FEE06B3B376546BACB1985A5C7EB69" type="4" never_null="true" id="19"/>
+		<field name="LastOperation" uuid="5E24432057818A46BB62CDBAB5CE1149" type="10" limiting_length="255" never_null="true" id="20"/>
+		<primary_key field_name="ID" field_uuid="9801126E87954E84ACF5FF5855374F37"/>
+		<table_extra input_form="Formulaire1" output_form="Formulaire2">
+			<editor_table_info displayable_fields_count="20">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="411" top="61" width="299" height="466.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" uuid="4CF4DC79953A4888BDD9A238CD929C03" type="7">
+		<field_ref uuid="6004879ACC0F4C6AB8DC9EBFEA181454" name="_parentSeq">
+			<table_ref uuid="BBC71B7812104135BED662B8CD4CC1E5" name="(Log_Line)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="87C13AA4F820404C8B044F6949418607" type="7">
+		<field_ref uuid="C2F115B786E0474D95A0B71C0D8E2067" name="ID">
+			<table_ref uuid="BBC71B7812104135BED662B8CD4CC1E5" name="(Log_Line)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="B5F18C4F49CA4F7CA6E85FE47FFE44F0" type="7">
+		<field_ref uuid="7DDDC0EFAAE84D5EA6D8A9BE5B89BCD9" name="_sequence">
+			<table_ref uuid="BBC71B7812104135BED662B8CD4CC1E5" name="(Log_Line)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="F40CD6E096F74D489CD69DCA468E268F" type="1">
+		<field_ref uuid="9801126E87954E84ACF5FF5855374F37" name="ID">
+			<table_ref uuid="2299B46AD9A744AF8823B8BCAACD9A0F" name="Project"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0" package_name="4D Log Analyser v17" structure_file_name="4D Log Analyser v17" data_file_path="\4D Debug Log Analyser v191.4DD" last_opening_mode="1">
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>

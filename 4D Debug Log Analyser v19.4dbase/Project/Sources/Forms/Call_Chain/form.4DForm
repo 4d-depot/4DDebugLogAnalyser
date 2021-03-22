@@ -1,0 +1,335 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 1000,
+	"windowMinHeight": 760,
+	"width": 1000,
+	"height": 760,
+	"menuBar": "Barre #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Round Rectangle1": {
+					"type": "rectangle",
+					"top": 20,
+					"left": 20,
+					"width": 960,
+					"height": 40,
+					"sizingX": "grow",
+					"fill": "#C0C0C0",
+					"stroke": "transparent",
+					"borderRadius": 5
+				},
+				"Nom1": {
+					"type": "input",
+					"top": 30,
+					"left": 32,
+					"width": 618,
+					"height": 24,
+					"sizingX": "grow",
+					"dataSource": "selectedProject.Nom_projet_import+\" call chains\"",
+					"stroke": "#303030",
+					"fontFamily": ".Lucida Grande UI Regular",
+					"fontSize": 16,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Round Rectangle2": {
+					"type": "rectangle",
+					"top": 73,
+					"left": 20,
+					"width": 960,
+					"height": 637,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#E0E0E0",
+					"stroke": "transparent",
+					"borderRadius": 5
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 200,
+					"left": 710,
+					"width": 260,
+					"height": 108,
+					"sizingX": "move",
+					"text": "Operation informations"
+				},
+				"Group Box": {
+					"type": "groupBox",
+					"top": 80,
+					"left": 710,
+					"width": 260,
+					"height": 114,
+					"sizingX": "move",
+					"text": "Process informations"
+				},
+				"Liste hierarchique1": {
+					"type": "list",
+					"top": 108,
+					"left": 27,
+					"width": 673,
+					"height": 594,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "timeTrace",
+					"enterable": false,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"method": "ObjectMethods/Liste hierarchique1.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDoubleClick",
+						"onExpand"
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 134,
+					"left": 727,
+					"width": 92,
+					"height": 17,
+					"sizingX": "move",
+					"textAlign": "right",
+					"text": "Method call:"
+				},
+				"Texte18": {
+					"type": "text",
+					"top": 162,
+					"left": 727,
+					"width": 92,
+					"height": 15,
+					"sizingX": "move",
+					"textAlign": "right",
+					"text": "Command call:"
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 134,
+					"left": 823,
+					"width": 130,
+					"height": 16,
+					"sizingX": "move",
+					"dataSource": "nbMethod",
+					"dataSourceTypeHint": "number",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 161,
+					"left": 823,
+					"width": 130,
+					"height": 16,
+					"sizingX": "move",
+					"dataSource": "nbCommand",
+					"dataSourceTypeHint": "number",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte19": {
+					"type": "text",
+					"top": 109,
+					"left": 729,
+					"width": 90,
+					"height": 15,
+					"sizingX": "move",
+					"textAlign": "right",
+					"text": "PUID:"
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 108,
+					"left": 823,
+					"width": 130,
+					"height": 16,
+					"sizingX": "move",
+					"dataSource": "selectedProcess",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte20": {
+					"type": "text",
+					"top": 223,
+					"left": 727,
+					"width": 92,
+					"height": 15,
+					"sizingX": "move",
+					"textAlign": "right",
+					"text": "Nb call:"
+				},
+				"Texte21": {
+					"type": "text",
+					"top": 250,
+					"left": 729,
+					"width": 90,
+					"height": 15,
+					"sizingX": "move",
+					"textAlign": "right",
+					"text": "Total Duration:"
+				},
+				"Variable12": {
+					"type": "input",
+					"top": 223,
+					"left": 823,
+					"width": 130,
+					"height": 16,
+					"sizingX": "move",
+					"dataSource": "nbCalled",
+					"dataSourceTypeHint": "number",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable13": {
+					"type": "input",
+					"top": 250,
+					"left": 823,
+					"width": 130,
+					"height": 16,
+					"sizingX": "move",
+					"dataSource": "readableDuration(totalDuration)",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Popup Liste deroulante1": {
+					"type": "dropdown",
+					"top": 80,
+					"left": 27,
+					"width": 673,
+					"height": 26,
+					"sizingX": "grow",
+					"dataSource": "stackExplorer",
+					"focusable": false,
+					"method": "ObjectMethods/Popup Liste deroulante1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte22": {
+					"type": "text",
+					"top": 279,
+					"left": 729,
+					"width": 90,
+					"height": 15,
+					"sizingX": "move",
+					"textAlign": "right",
+					"text": "Average:"
+				},
+				"Variable15": {
+					"type": "input",
+					"top": 279,
+					"left": 823,
+					"width": 130,
+					"height": 16,
+					"sizingX": "move",
+					"dataSource": "Choose:C955(nbCalled=0; \"\"; readableDuration(totalDuration/nbCalled))",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 719,
+					"left": 27,
+					"width": 778,
+					"height": 33,
+					"stroke": "#808080",
+					"text": "ALT+Click on a process to deploy heaviest call chain\rDouble-Click on a line to push it in the chain explorer list",
+					"sizingY": "move"
+				},
+				"Obj_b_Analyser_02": {
+					"type": "button",
+					"top": 725,
+					"left": 820,
+					"width": 160,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Bouton",
+					"action": "cancel",
+					"text": "Back to projects",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"geometryStamp": 3,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

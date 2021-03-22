@@ -1,0 +1,1097 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 1000,
+	"windowMinHeight": 760,
+	"width": 1000,
+	"height": 760,
+	"menuBar": "Barre #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "841pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 326,
+					"left": 20,
+					"width": 960,
+					"height": 377,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Tab Control",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"Summary",
+						"Top",
+						"Operations"
+					],
+					"action": "gotoPage",
+					"method": "ObjectMethods/Tab Control.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Round Rectangle1": {
+					"type": "rectangle",
+					"top": 20,
+					"left": 20,
+					"width": 960,
+					"height": 40,
+					"sizingX": "grow",
+					"fill": "#C0C0C0",
+					"stroke": "transparent",
+					"borderRadius": 5
+				},
+				"StatsInfos": {
+					"type": "input",
+					"top": 721,
+					"left": 20,
+					"width": 780,
+					"height": 18,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Nom1": {
+					"type": "input",
+					"top": 30,
+					"left": 32,
+					"width": 618,
+					"height": 24,
+					"sizingX": "grow",
+					"dataSource": "selectedProject.Nom_projet_import",
+					"stroke": "#303030",
+					"fontFamily": ".Lucida Grande UI Regular",
+					"fontSize": 16,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"GraphPict": {
+					"type": "input",
+					"top": 70,
+					"left": 20,
+					"width": 960,
+					"height": 240,
+					"sizingX": "grow",
+					"dataSource": "img",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"pictureFormat": "scaled",
+					"dragging": "none",
+					"method": "ObjectMethods/GraphPict.4dm",
+					"events": [
+						"onLoad",
+						"onMouseUp",
+						"onClick",
+						"onMouseEnter",
+						"onMouseLeave",
+						"onMouseMove"
+					]
+				},
+				"Obj_b_Analyser_02": {
+					"type": "button",
+					"top": 719,
+					"left": 820,
+					"width": 160,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Bouton",
+					"action": "cancel",
+					"text": "Back to projects",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Obj_b_Analyser_02.4dm"
+				},
+				"Ligne9": {
+					"type": "line",
+					"top": 27,
+					"left": 660,
+					"height": 24,
+					"sizingX": "move"
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 31,
+					"left": 670,
+					"width": 80,
+					"height": 16,
+					"sizingX": "move",
+					"textAlign": "right",
+					"text": "Date:"
+				},
+				"ObjPopupDisplayDate": {
+					"type": "dropdown",
+					"top": 29,
+					"left": 754,
+					"width": 210,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "dateArray",
+					"dataSourceTypeHint": "arrayDate",
+					"focusable": false,
+					"method": "ObjectMethods/ObjPopupDisplayDate.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Round Rectangle": {
+					"type": "rectangle",
+					"top": 70,
+					"left": 20,
+					"width": 960,
+					"height": 240,
+					"visibility": "hidden",
+					"fill": "transparent",
+					"stroke": "#FF0000",
+					"strokeDashArray": "6 2",
+					"borderRadius": 5
+				},
+				"ZoomIn": {
+					"type": "button",
+					"top": 100,
+					"left": 935,
+					"width": 40,
+					"height": 40,
+					"sizingX": "move",
+					"focusable": false,
+					"icon": "/RESOURCES/pictures/Zoom-in-white.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/ZoomIn.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ZoomOut": {
+					"type": "button",
+					"top": 140,
+					"left": 935,
+					"width": 40,
+					"height": 40,
+					"sizingX": "move",
+					"focusable": false,
+					"icon": "/RESOURCES/pictures/Zoom-out-white.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/ZoomOut.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"HelpBtn3": {
+					"type": "button",
+					"top": 250,
+					"left": 950,
+					"width": 24,
+					"height": 24,
+					"sizingX": "move",
+					"tooltip": "Use the grey borders to define the zooming zone and the purple cursor to get the operation of a given minute.",
+					"shortcutKey": "[left arrow]",
+					"focusable": false,
+					"style": "help",
+					"events": [
+						"onClick"
+					]
+				},
+				"Obj_LB_spent_time_process": {
+					"type": "listbox",
+					"top": 364,
+					"left": 27,
+					"width": 264,
+					"height": 329,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "24px",
+					"dataSource": "LB_proc",
+					"currentItemSource": "LB_procCurrentItem",
+					"metaSource": "OPColor",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Obj_LB_spent_time_process.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Colonne1",
+							"dataSource": "This:C1470.shortname",
+							"width": 118,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "headerProcess",
+								"text": "Process"
+							},
+							"footer": {
+								"name": "Pied1"
+							}
+						},
+						{
+							"name": "Colonne2",
+							"dataSource": "readableDuration(This:C1470.durationReal)",
+							"width": 131,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "right",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "headerDuration",
+								"text": "Duration"
+							},
+							"footer": {
+								"name": "Pied2"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"BulletMethods": {
+					"type": "rectangle",
+					"top": 517,
+					"left": 562,
+					"width": 12,
+					"height": 12,
+					"fill": "#FFD700"
+				},
+				"BulletTriggers": {
+					"type": "rectangle",
+					"top": 446,
+					"left": 562,
+					"width": 12,
+					"height": 12,
+					"fill": "#00DDD2"
+				},
+				"Line7": {
+					"type": "line",
+					"top": 385,
+					"left": 579,
+					"height": 262,
+					"sizingY": "grow",
+					"stroke": "#C0C0C0"
+				},
+				"Texte15": {
+					"type": "text",
+					"top": 550,
+					"left": 292,
+					"width": 190,
+					"height": 16,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Command calls  /s.:"
+				},
+				"Texte17": {
+					"type": "text",
+					"top": 586,
+					"left": 292,
+					"width": 190,
+					"height": 16,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Member methods calls:"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 444,
+					"left": 292,
+					"width": 190,
+					"height": 16,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Method calls:"
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 479,
+					"left": 292,
+					"width": 190,
+					"height": 16,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Method calls /s.:"
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 395,
+					"left": 584,
+					"width": 389,
+					"height": 16,
+					"sizingX": "grow",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Distribution"
+				},
+				"Texte8": {
+					"type": "text",
+					"top": 515,
+					"left": 292,
+					"width": 190,
+					"height": 16,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Commands calls:"
+				},
+				"Texte9": {
+					"type": "text",
+					"top": 395,
+					"left": 310,
+					"width": 250,
+					"height": 16,
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Count"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 444,
+					"left": 480,
+					"width": 77,
+					"height": 16,
+					"dataSource": "nbMethodCall",
+					"dataSourceTypeHint": "number",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,###,##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 479,
+					"left": 480,
+					"width": 77,
+					"height": 16,
+					"dataSource": "methPerSec",
+					"dataSourceTypeHint": "number",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,###,##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 385,
+					"left": 1035,
+					"width": 60,
+					"height": 16,
+					"sizingX": "move",
+					"dataSource": "pMeth",
+					"dataSourceTypeHint": "number",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "##0.00 %",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 420,
+					"left": 1035,
+					"width": 60,
+					"height": 16,
+					"sizingX": "move",
+					"dataSource": "pCom",
+					"dataSourceTypeHint": "number",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "##0.00 %",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"DistriGraph": {
+					"type": "input",
+					"top": 431,
+					"left": 647,
+					"width": 260,
+					"height": 260,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "distriGraph",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalTopLeft",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 515,
+					"left": 480,
+					"width": 77,
+					"height": 16,
+					"dataSource": "nbCommandCall",
+					"dataSourceTypeHint": "number",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,###,##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 550,
+					"left": 480,
+					"width": 77,
+					"height": 16,
+					"dataSource": "cmdPerSec",
+					"dataSourceTypeHint": "number",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,###,##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 586,
+					"left": 480,
+					"width": 77,
+					"height": 16,
+					"dataSource": "nbMemberCall",
+					"dataSourceTypeHint": "number",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 620,
+					"left": 480,
+					"width": 77,
+					"height": 16,
+					"dataSource": "mbrPerSec",
+					"dataSourceTypeHint": "number",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte14": {
+					"type": "text",
+					"top": 620,
+					"left": 292,
+					"width": 190,
+					"height": 16,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Member methods calls  /s.:"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 423,
+					"left": 311,
+					"width": 653,
+					"height": 8,
+					"sizingX": "grow",
+					"stroke": "#C0C0C0",
+					"startPoint": "bottomLeft"
+				},
+				"BulletMethods1": {
+					"type": "rectangle",
+					"top": 588,
+					"left": 562,
+					"width": 12,
+					"height": 12,
+					"fill": "#4B0082"
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 452,
+					"left": 1035,
+					"width": 60,
+					"height": 16,
+					"sizingX": "move",
+					"dataSource": "pMem",
+					"dataSourceTypeHint": "number",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "##0.00 %",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"LB_method_calls": {
+					"type": "listbox",
+					"top": 387,
+					"left": 298,
+					"width": 673,
+					"height": 305,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "24px",
+					"showFooters": true,
+					"footerHeight": "20px",
+					"staticColumnCount": 3,
+					"dataSource": "allTimeCol",
+					"metaSource": "OPColor",
+					"scrollbarHorizontal": "hidden",
+					"method": "ObjectMethods/LB_method_calls.4dm",
+					"events": [
+						"onLoad",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Colonne3",
+							"dataSource": "This:C1470.name",
+							"width": 394,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "header2Operations",
+								"text": "Operations",
+								"textAlign": "center",
+								"verticalAlign": "middle"
+							},
+							"footer": {
+								"name": "LBFoot1"
+							}
+						},
+						{
+							"name": "Colonne4",
+							"dataSource": "This:C1470.nbCall",
+							"dataSourceTypeHint": "number",
+							"width": 80,
+							"minWidth": 80,
+							"maxWidth": 80,
+							"resizable": false,
+							"enterable": false,
+							"numberFormat": "###,###,##0",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "header2Calls",
+								"text": "Calls",
+								"textAlign": "center",
+								"verticalAlign": "middle"
+							},
+							"footer": {
+								"name": "LBFoot2",
+								"dataSource": "LB_totalCall",
+								"dataSourceTypeHint": "number",
+								"variableCalculation": "sum",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne5",
+							"dataSource": "readableDuration(This:C1470.totalDuration)",
+							"width": 160,
+							"minWidth": 160,
+							"maxWidth": 160,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "right",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "header2Time",
+								"text": "Time",
+								"textAlign": "center",
+								"verticalAlign": "middle"
+							},
+							"footer": {
+								"name": "LBFoot3",
+								"textAlign": "right",
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"Line6": {
+					"type": "line",
+					"top": 815,
+					"left": 40,
+					"width": 920,
+					"height": 2,
+					"stroke": "#C0C0C0"
+				},
+				"operationType": {
+					"type": "dropdown",
+					"top": 364,
+					"left": 413,
+					"width": 144,
+					"height": 21,
+					"dataSource": "Form:C1466.operationType",
+					"choiceList": [
+						"All operations",
+						"Commands",
+						"Methods",
+						"Members",
+						"PluginEvent",
+						"PluginCommand",
+						"PluginCallback",
+						"Task"
+					],
+					"method": "ObjectMethods/operationType.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Texte16": {
+					"type": "text",
+					"top": 366,
+					"left": 297,
+					"width": 111,
+					"height": 16,
+					"textAlign": "right",
+					"text": "Operations type:"
+				}
+			},
+			"entryOrder": [
+				"LB_method_calls",
+				"operationType"
+			]
+		},
+		{
+			"objects": {
+				"QueryMode": {
+					"type": "dropdown",
+					"top": 364,
+					"left": 345,
+					"width": 104,
+					"height": 21,
+					"dataSource": "QueryMode",
+					"choiceList": [
+						"Filter",
+						"Highlight"
+					],
+					"method": "ObjectMethods/QueryMode.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ListboxOperations": {
+					"type": "listbox",
+					"top": 388,
+					"left": 297,
+					"width": 677,
+					"height": 304,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "24px",
+					"dataSource": "LB_Operations_filtered",
+					"metaSource": "OPColor",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#C0C0C0",
+					"verticalLineStroke": "#C0C0C0",
+					"fill": "#FFFFFF",
+					"rowFillSource": "This:C1470.color",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "Colonne6",
+							"dataSource": "This:C1470.sequence",
+							"width": 81,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"alternateFill": "#FFFFFF",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Seq.",
+								"verticalAlign": "top"
+							},
+							"footer": {
+								"name": "Pied3",
+								"fill": "#FFFFFF"
+							}
+						},
+						{
+							"name": "Colonne8",
+							"dataSource": "This:C1470.date",
+							"dataSourceTypeHint": "date",
+							"width": 90,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fill": "#FFFFFF",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête11",
+								"text": "Time",
+								"verticalAlign": "top"
+							},
+							"footer": {
+								"name": "Pied5",
+								"fill": "#FFFFFF"
+							}
+						},
+						{
+							"name": "Colonne9",
+							"dataSource": "This:C1470.PUID",
+							"width": 77,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fill": "#FFFFFF",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête12",
+								"text": "Puid",
+								"verticalAlign": "top"
+							},
+							"footer": {
+								"name": "Pied6",
+								"fill": "#FFFFFF"
+							}
+						},
+						{
+							"name": "Colonne10",
+							"dataSource": "getStrOpType(This:C1470)",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fill": "#FFFFFF",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête4",
+								"text": "Operation",
+								"verticalAlign": "top"
+							},
+							"footer": {
+								"name": "Pied7",
+								"fill": "#FFFFFF"
+							}
+						},
+						{
+							"name": "Colonne11",
+							"dataSource": "This:C1470.duration",
+							"dataSourceTypeHint": "number",
+							"width": 81,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"numberFormat": "###,###,##0",
+							"fill": "#FFFFFF",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête6",
+								"text": " μs",
+								"verticalAlign": "top"
+							},
+							"footer": {
+								"name": "Pied8",
+								"fill": "#FFFFFF"
+							}
+						},
+						{
+							"name": "Colonne12",
+							"dataSource": "getStrOpName(This:C1470)",
+							"width": 189,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fill": "#FFFFFF",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête15",
+								"text": "4D code",
+								"verticalAlign": "top"
+							},
+							"footer": {
+								"name": "Pied9",
+								"fill": "#FFFFFF"
+							}
+						},
+						{
+							"name": "Colonne13",
+							"dataSource": "This:C1470.param",
+							"width": 64,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fill": "#FFFFFF",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête16",
+								"text": "Param",
+								"verticalAlign": "top"
+							},
+							"footer": {
+								"name": "Pied10",
+								"fill": "#FFFFFF"
+							}
+						}
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 366,
+					"left": 851,
+					"width": 123,
+					"height": 16,
+					"sizingX": "move",
+					"dataSource": "LB_Operations_filtered.length",
+					"dataSourceTypeHint": "number",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,###,##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte11": {
+					"type": "text",
+					"top": 366,
+					"left": 446,
+					"width": 60,
+					"height": 16,
+					"textAlign": "right",
+					"text": "Search:"
+				},
+				"Texte12": {
+					"type": "text",
+					"top": 366,
+					"left": 297,
+					"width": 44,
+					"height": 16,
+					"textAlign": "right",
+					"text": "Mode:"
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 366,
+					"left": 512,
+					"width": 158,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "searchZone",
+					"multiline": "no",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onValidate",
+						"onLosingFocus"
+					]
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 366,
+					"left": 766,
+					"width": 80,
+					"height": 16,
+					"sizingX": "move",
+					"textAlign": "right",
+					"text": "Operations:"
+				},
+				"searchButton": {
+					"type": "button",
+					"top": 365,
+					"left": 674,
+					"width": 92,
+					"height": 19,
+					"sizingX": "move",
+					"text": "Filter/Hightlight",
+					"focusable": false,
+					"method": "ObjectMethods/searchButton.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"QueryMode",
+				"ListboxOperations",
+				"searchButton"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

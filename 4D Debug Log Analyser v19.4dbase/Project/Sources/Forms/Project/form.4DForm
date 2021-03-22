@@ -1,0 +1,655 @@
+{
+	"destination": "detailScreen",
+	"width": 1000,
+	"height": 760,
+	"menuBar": "Barre #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "841pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Picture1": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 420,
+					"height": 30,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Picture1.png"
+				},
+				"Picure4": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 420,
+					"height": 760,
+					"sizingY": "grow",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Picture1.png"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 730,
+					"left": 0,
+					"width": 420,
+					"height": 30,
+					"sizingY": "move",
+					"fill": "#000000",
+					"stroke": "transparent"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 90,
+					"left": 440,
+					"width": 540,
+					"height": 370,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"text": "Log information"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 6,
+					"left": 0,
+					"width": 420,
+					"height": 17,
+					"textAlign": "center",
+					"fontFamily": "Police système",
+					"fontSize": 13,
+					"fontWeight": "bold",
+					"text": "Projects\r"
+				},
+				"Texte17": {
+					"type": "text",
+					"top": 134,
+					"left": 403,
+					"width": 180,
+					"height": 19,
+					"textAlign": "right",
+					"fontFamily": "Police système",
+					"fontSize": 13,
+					"text": "First operation:"
+				},
+				"Texte19": {
+					"type": "text",
+					"top": 164,
+					"left": 403,
+					"width": 180,
+					"height": 19,
+					"textAlign": "right",
+					"fontFamily": "Police système",
+					"fontSize": 13,
+					"text": "Last operation:"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 500,
+					"left": 460,
+					"width": 210,
+					"height": 12,
+					"sizingY": "move",
+					"class": "Buttons_11",
+					"textAlign": "right",
+					"text": "Import Date:"
+				},
+				"Texte21": {
+					"type": "text",
+					"top": 241,
+					"left": 403,
+					"width": 180,
+					"height": 15,
+					"textAlign": "right",
+					"text": "Number of lines:"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 520,
+					"left": 460,
+					"width": 210,
+					"height": 12,
+					"sizingY": "move",
+					"class": "Buttons_11",
+					"textAlign": "right",
+					"text": "Import Duration:"
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 134,
+					"left": 693,
+					"width": 30,
+					"height": 18,
+					"textAlign": "center",
+					"text": "at"
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 500,
+					"left": 780,
+					"width": 30,
+					"height": 12,
+					"sizingY": "move",
+					"class": "Buttons_11",
+					"textAlign": "center",
+					"text": "at"
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 540,
+					"left": 460,
+					"width": 210,
+					"height": 12,
+					"sizingY": "move",
+					"class": "Buttons_11",
+					"textAlign": "right",
+					"text": "Size:"
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 164,
+					"left": 693,
+					"width": 30,
+					"height": 16,
+					"textAlign": "center",
+					"text": "at"
+				},
+				"Bouton 3D": {
+					"type": "button",
+					"top": 730,
+					"left": 0,
+					"width": 210,
+					"height": 30,
+					"sizingY": "move",
+					"dataSource": "bt_new_project",
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"text": "New",
+					"icon": "/RESOURCES/0",
+					"iconFrames": 4,
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/Images/BigBtnBgnd.png",
+					"method": "ObjectMethods/Bouton 3D.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton 3D1": {
+					"type": "button",
+					"top": 730,
+					"left": 210,
+					"width": 210,
+					"height": 30,
+					"sizingY": "move",
+					"dataSource": "bt_delete_project",
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"text": "Delete",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/Images/BiBtnBgnd.png",
+					"method": "ObjectMethods/Bouton 3D1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture10": {
+					"type": "picture",
+					"top": 16,
+					"left": 909,
+					"width": 64,
+					"height": 64,
+					"sizingX": "move",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/library/Graphic.png"
+				},
+				"Group Box": {
+					"type": "groupBox",
+					"top": 470,
+					"left": 440,
+					"width": 540,
+					"height": 230,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"text": "Import information"
+				},
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 288,
+					"left": 487,
+					"width": 470,
+					"height": 152,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"text": "Comments"
+				},
+				"Group Box3": {
+					"type": "groupBox",
+					"top": 570,
+					"left": 487,
+					"width": 470,
+					"height": 110,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"text": "Log folder path"
+				},
+				"Obj_b_Analyzer_02": {
+					"type": "button",
+					"top": 719,
+					"left": 860,
+					"width": 120,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"text": "Display details",
+					"focusable": false,
+					"method": "ObjectMethods/Obj_b_Analyzer_02.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LB_Projects": {
+					"type": "listbox",
+					"top": 30,
+					"left": 0,
+					"width": 420,
+					"height": 700,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "28px",
+					"showHeaders": false,
+					"dataSource": "projectList",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "automatic",
+					"horizontalLineStroke": "transparent",
+					"fill": "transparent",
+					"verticalAlign": "middle",
+					"borderStyle": "none",
+					"method": "ObjectMethods/LB_Projects.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.Nom_projet_import",
+							"width": 210,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"verticalAlign": "middle",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "Entête1",
+								"verticalAlign": "middle"
+							},
+							"footer": {
+								"name": "Pied1",
+								"truncateMode": "none",
+								"verticalAlign": "middle"
+							}
+						},
+						{
+							"name": "Colonne2",
+							"dataSource": "This:C1470.ID",
+							"dataSourceTypeHint": "number",
+							"width": 210,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"truncateMode": "none",
+							"textAlign": "left",
+							"verticalAlign": "middle",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Entête2",
+								"verticalAlign": "middle"
+							},
+							"footer": {
+								"name": "Pied2",
+								"truncateMode": "none",
+								"verticalAlign": "middle"
+							}
+						}
+					]
+				},
+				"_Heure_Debut2": {
+					"type": "input",
+					"top": 134,
+					"left": 593,
+					"width": 100,
+					"height": 16,
+					"dataSource": "selectedProject.Date_Debut",
+					"dataSourceTypeHint": "date",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"_Heure_Fin1": {
+					"type": "input",
+					"top": 164,
+					"left": 593,
+					"width": 100,
+					"height": 16,
+					"dataSource": "selectedProject.Date_Fin",
+					"dataSourceTypeHint": "date",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"_Heure_Fin": {
+					"type": "input",
+					"top": 164,
+					"left": 723,
+					"width": 100,
+					"height": 16,
+					"dataSource": "selectedProject.Heure_Fin",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"_Nb_Ligne": {
+					"type": "input",
+					"top": 241,
+					"left": 593,
+					"width": 287,
+					"height": 16,
+					"dataSource": "selectedProject.Nb_Ligne",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,###,##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Chemin1": {
+					"type": "input",
+					"top": 306,
+					"left": 495,
+					"width": 450,
+					"height": 112,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "selectedProject.comment",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Chemin1.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus"
+					]
+				},
+				"Nom": {
+					"type": "input",
+					"top": 30,
+					"left": 520,
+					"width": 360,
+					"height": 29,
+					"sizingX": "grow",
+					"dataSource": "selectedProject.Nom_projet_import",
+					"textAlign": "center",
+					"fontFamily": ".Lucida Grande UI Regular",
+					"fontSize": 18,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Nom.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onMouseEnter",
+						"onMouseLeave"
+					]
+				},
+				"_Date_Debut1": {
+					"type": "input",
+					"top": 500,
+					"left": 680,
+					"width": 100,
+					"height": 13,
+					"sizingY": "move",
+					"dataSource": "selectedProject.Date_import",
+					"dataSourceTypeHint": "date",
+					"class": "Buttons_11",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"_Heure_Debut1": {
+					"type": "input",
+					"top": 500,
+					"left": 810,
+					"width": 100,
+					"height": 13,
+					"sizingY": "move",
+					"dataSource": "Time string:C180(selectedProject.Heure_import)",
+					"class": "Buttons_11",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Obj_b_LogFolder_02": {
+					"type": "input",
+					"top": 594,
+					"left": 496,
+					"width": 450,
+					"height": 39,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSource": "selectedProject.LogsFolderPath",
+					"class": "Buttons_11",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 540,
+					"left": 680,
+					"width": 280,
+					"height": 13,
+					"sizingY": "move",
+					"dataSource": "v_taille",
+					"class": "Buttons_11",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 520,
+					"left": 680,
+					"width": 280,
+					"height": 13,
+					"sizingY": "move",
+					"dataSource": "v_duree_import",
+					"class": "Buttons_11",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"Line": {
+					"type": "line",
+					"top": 736,
+					"left": 210,
+					"height": 18,
+					"sizingY": "move",
+					"stroke": "#808080"
+				},
+				"_Heure_Fin2": {
+					"type": "input",
+					"top": 134,
+					"left": 723,
+					"width": 100,
+					"height": 16,
+					"dataSource": "selectedProject.Heure_Debut",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Obj_b_Analyzer_01": {
+					"type": "button",
+					"top": 719,
+					"left": 700,
+					"width": 140,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"text": "Display call chains",
+					"focusable": false,
+					"method": "ObjectMethods/Obj_b_Analyzer_01.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"_Nb_Ligne1": {
+					"type": "input",
+					"top": 190,
+					"left": 593,
+					"width": 364,
+					"height": 16,
+					"dataSource": "selectedProject.LastOperation",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			},
+			"entryOrder": [
+				"Obj_b_Analyzer_02",
+				"LB_Projects",
+				"Nom",
+				"Obj_b_Analyzer_01"
+			]
+		}
+	],
+	"method": "method.4dm",
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

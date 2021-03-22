@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="10">
+	<com.4d>
+		<deployment>
+			<options/>&#xa;&#x9;&#x9;&#x9;&#xa;&#x9;&#x9;
+		</deployment>
+		<compiler>
+			<options compilation_path="3"/>&#xa;&#x9;&#x9;&#x9;&#xa;&#x9;&#x9;
+		</compiler>
+		<general startup_environnement="1"/>
+		<interface>
+			<user splash_screen="false"/>&#xa;&#x9;&#x9;&#x9;&#xa;&#x9;&#x9;
+		</interface>
+		<database>
+			<cache flush_buffer_delay="20s" size_maximum="16384"/>
+			<misc standard_xpath="false"/>&#xa;&#x9;&#x9;&#x9;&#xa;&#x9;&#x9;
+		</database>
+		<server>
+			<network>
+				<options publication_name="4D Log Analyser v17"/>&#xa;&#x9;&#x9;&#x9;&#x9;&#xa;&#x9;&#x9;&#x9;
+			</network>&#xa;&#x9;&#x9;&#x9;&#xa;&#x9;&#x9;
+		</server>
+		<sql>
+			<publication port_number="19812"/>&#xa;&#x9;&#x9;&#x9;&#xa;&#x9;&#x9;
+		</sql>
+		<php ip_address="127.0.0.1"/>
+		<web>
+			<standalone_server>
+				<configuration port_number="80" session_mode="3" automatic_session_management="true"/>&#xa;&#x9;&#x9;&#x9;&#x9;&#xa;&#x9;&#x9;&#x9;
+			</standalone_server>
+			<remote>
+				<configuration session_mode="3" automatic_session_management="true"/>&#xa;&#x9;&#x9;&#x9;&#x9;&#xa;&#x9;&#x9;&#x9;
+			</remote>&#xa;&#x9;&#x9;&#x9;&#xa;&#x9;&#x9;&#x9;&#xa;&#x9;&#x9;
+		</web>&#xa;&#x9;&#x9;&#xa;&#x9;&#x9;&#xa;&#x9;&#x9;&#xa;&#x9;&#x9;&#xa;&#x9;&#x9;&#xa;&#x9;&#x9;&#xa;&#x9;&#x9;&#xa;&#x9;&#x9;&#xa;&#x9;&#x9;&#xa;&#x9;
+	</com.4d>&#xa;&#x9;&#xa;
+</preferences>
