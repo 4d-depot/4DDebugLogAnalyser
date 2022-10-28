@@ -17,7 +17,7 @@ For each ($tmpFile; $logPath)
 	End case 
 End for each 
 
-$docStr:=Document to text:C1236($file.path)
+$docStr:=Document to text:C1236($file.path; "UTF-16")
 $lastLine:=getLastLine(->$docStr)
 $lastLineCol:=Split string:C1554($lastLine; Char:C90(Tab:K15:37))
 
