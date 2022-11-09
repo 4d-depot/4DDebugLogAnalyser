@@ -18,7 +18,7 @@ $num:=$4
 
 $alerted:=False:C215
 $i:=0
-$logFileTab:=Split string:C1554(Document to text:C1236($logFile; "UTF-16"); $carriageReturn)
+$logFileTab:=Split string:C1554(Document to text:C1236($logFile; "UTF-8"); $carriageReturn)
 For each ($logLine; $logFileTab)
 	
 	If (Not:C34(Bool:C1537($i%1000)))

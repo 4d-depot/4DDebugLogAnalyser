@@ -8,7 +8,7 @@ C_LONGINT:C283($pos; $longTrouvee)
 C_COLLECTION:C1488($lineCol)
 
 $file:=$1
-$docStr:=Document to text:C1236($file.path; "UTF-16")
+$docStr:=Document to text:C1236($file.path; "UTF-8")
 
 $pos:=Position:C15(Choose:C955(Is Windows:C1573; "\r\n"; "\r"); $docStr; 0; $longTrouvee)
 $line:=Substring:C12($docStr; 0; $pos)
