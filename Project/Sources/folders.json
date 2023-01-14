@@ -1,13 +1,78 @@
 {
-	"Dossier par défaut": {
-		"groups": [
-			"Formulaires par défaut",
-			"Méthodes projet par défaut",
-			"Tables par défaut"
+	"Compiler": {
+		"methods": [
+			"Compiler_Arrays",
+			"Compiler_Methods",
+			"Compiler_Variables"
 		]
 	},
-	"Formulaires par défaut": {},
-	"Méthodes projet par défaut": {},
-	"Tables par défaut": {},
+	"Form": {
+		"forms": [
+			"[Project]Entree",
+			"[Project]Formulaire1",
+			"[Project]Formulaire2",
+			"[Project]Sortie",
+			"Call_Chain",
+			"Dial_Infos_Logs",
+			"Dial_Main",
+			"Project"
+		]
+	},
+	"format": {
+		"methods": [
+			"getMinuteStamp",
+			"getStrOpName",
+			"getStrOpType",
+			"readableDuration",
+			"timeToList",
+			"timeToMicroseconds",
+			"timeToString",
+			"tools_timeStamp_to_String"
+		]
+	},
+	"get": {
+		"methods": [
+			"get_stack_string",
+			"getCurrentPUID",
+			"getFileInfo",
+			"getFileLogLines",
+			"getFirstLogOffset",
+			"getFirstTime",
+			"getLastLine",
+			"getlastOp",
+			"getLastSeq",
+			"getLastTime",
+			"getLogLines",
+			"getNbCalledMethod",
+			"getProcessDuration",
+			"getRefFromName"
+		]
+	},
+	"notUsed": {
+		"methods": [
+			"logToString",
+			"numericableDuration",
+			"OPColor",
+			"stackToList",
+			"z"
+		]
+	},
+	"queryMode": {
+		"methods": [
+			"_filter",
+			"_highlight",
+			"filter",
+			"highlight",
+			"isQuery"
+		]
+	},
+	"sortFormula": {
+		"methods": [
+			"sortDuration",
+			"sortLogPath",
+			"sortProcessByDecreasingTime",
+			"sortTextNumber"
+		]
+	},
 	"trash": {}
 }
