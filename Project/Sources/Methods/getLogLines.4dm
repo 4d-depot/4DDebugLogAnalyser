@@ -44,7 +44,10 @@ Else
 		DOCUMENT LIST:C474($str; $logFiles)
 		$project.LogsFolderPath:=$str
 		For ($i; 1; Size of array:C274($logFiles))
-			If (($logFiles{$i}="4DDebugLog_@") & ($logFiles{$i}="@.txt"))
+			
+			// Modified by: Alistair Bates (20/10/2023)
+			// Server logs are called "4DDebugLogServer" - removed _ from the end of the text search below
+			If (($logFiles{$i}="4DDebugLog@") & ($logFiles{$i}="@.txt"))
 				$path:=New object:C1471("path"; $str+$logFiles{$i})
 				logPath.push($path)
 			End if 
